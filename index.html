@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+  <div class="row container m-auto">
+    <div class="col-3">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link border-0 mb-3 active" id="v-pills-lesson1-tab" data-toggle="pill"
+          data-target="#v-pills-lesson1" type="button" role="tab" aria-controls="v-pills-lesson1"
+          aria-selected="true">Lesson 1</button>
+        <button class="nav-link border-0 mb-3" id="v-pills-lesson2-tab" data-toggle="pill"
+          data-target="#v-pills-lesson2" type="button" role="tab" aria-controls="v-pills-lesson2"
+          aria-selected="false">Lesson 2</button>
+        <button class="nav-link border-0 mb-3" id="v-pills-lesson3-tab" data-toggle="pill"
+          data-target="#v-pills-lesson3" type="button" role="tab" aria-controls="v-pills-lesson3"
+          aria-selected="false">Lesson 3</button>
+        <button class="nav-link border-0 mb-3" id="v-pills-lesson4-tab" data-toggle="pill"
+          data-target="#v-pills-lesson4" type="button" role="tab" aria-controls="v-pills-lesson4"
+          aria-selected="false">Lesson 4</button>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-lesson1" role="tabpanel"
+          aria-labelledby="v-pills-lesson1-tab">
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <h4>
+                  Lesson 1
+                </h4>
+              </div>
+              <div class="card-body row justify-content-between">
+                <input type="number" id="daily" class="form-control col-3 mx-2" placeholder="Day" />
+                <input type="number" id="monthly" class="form-control col-3 mx-2" placeholder="Month" />
+                <input type="number" id="yearly" value="2022" class="form-control col-3 mx-2" placeholder="Year" />
+              </div>
+              <div class="card-footer">
+                <button onclick="yesterday()" class="btn-success">
+                  Previous Day
+                </button>
+                <button onclick="tomorrow()" class="btn-danger">After 1 day</button>
+                <div class="alert alert-warning">
+                  This day is:
+                  <span id="showResult"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-lesson2" role="tabpanel" aria-labelledby="v-pills-lesson2-tab">
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <h4>
+                  Lesson 2
+                </h4>
+              </div>
+              <div class="card-body row justify-content-between">
+                <input type="number" id="dayMonth" class="form-control col-5 mx-2" placeholder="Month" />
+                <input type="number" id="dayYear" value="1000" class="form-control col-5 mx-2" placeholder="Year" />
+              </div>
+              <div class="card-footer">
+                <button onclick="countDay()" id="btnAbout" class="btn-success">
+                  Enter
+                </button>
+                <div class="alert alert-warning">
+                  Total days:
+                  <span id="showDays"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-lesson3" role="tabpanel" aria-labelledby="v-pills-lesson3-tab">
+          <div class="container">
+            <div class="card">
+              <div class="card-header">
+                <h4>Lesson 3</h4>
+              </div>
+              <div class="card-body">
+                <input type="number" id="readNum" class="form-control" placeholder="Input 3 numbers in here" />
+              </div>
+              <div class="card-footer">
+                <button onclick="readNumber()" id="" class="btn-success">Enter</button>
+                <div class="alert alert-warning">
+                  Bot Read:
+                  <span id="readding"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-lesson4" role="tabpanel" aria-labelledby="v-pills-lesson4-tab">
+          <div class="container">
+            <div class="card w-50 m-auto">
+              <div class="card-header">
+                <h3>Lesson 4</h3>
+              </div>
+              <div class="card-body">
+                <input type="text" id="people1" class="form-control my-2" placeholder="Input name person 1">
+                <input type="number" id="numberOne" class="form-control my-2" placeholder="Km">
+
+              </div>
+              <div class="card-body">
+                <input type="text" id="people2" class="form-control my-2" placeholder="Input name person 2">
+                <input type="number" id="numberTwo" class="form-control my-2" placeholder="Km">
+
+              </div>
+
+              <div class="card-body">
+                <input type="text" id="people3" class="form-control my-2" placeholder="Input name person 3">
+                <input type="number" id="numberThree" class="form-control my-2" placeholder="Km">
+
+              </div>
+              <div class="card-footer">
+                <button onclick="Distance()" class="btn btn-warning">Enter</button>
+                <div class="alert alert-success">Results:
+                  <span id="result"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./js/main.js"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
